@@ -6,57 +6,95 @@ body {
 
 /* The animation code */
 @keyframes show-header {
-  from {
-	  background-color: #CB7DE8;
+  0% {
+	  color: black;
 	  border-radius: 0;
 	  opacity: 0.0;
+	  margin-top: 2px;
+	  margin-bottom: 1px;
   }
-  to {
-	  background-color: #75E3FF;
-	  border-radius: 25px 25px 0 0;
+  10%{
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  border: 1px solid white;
+  }
+  25% {
+	  opacity: 0.45;
+  }
+  50% {
+	  color: white;
+	  border-radius: 25px;
+	  border: 1px solid white;
+	  margin-top: 0;
+	  margin-left: 1.5em;
+	  margin-right: 1.5em;
 	  opacity: 0.95;
+  }
+  75% {
+	  opacity: 0.45;
+  }
+  90% {
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  border: 1px solid white;
+  }
+  100% {
+	  color: black;
+	  border-radius: 0;
+	  opacity: 0.0;
+	  margin-top: 2px;
+	  margin-bottom: 1px;
   }
 }
 
 @keyframes show-card {
 	from {
-		background-color: #CB7DE8;
+		background-color: white;
 		opacity: 0.0;
 	}
 	to {
-		background-color: #E2A388;
+		background-color: black;
 		opacity: 1.0;
 	}
 }
 
 h1.header {
+	z-index: 1;
 	font-size: 128px;
 	text-align: center;
 	opacity: 1.0;
-	background-color: #75E3FF;
+	background-color: black;
 	animation-name: show-header;
-	animation-duration: 7s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: forward;
 	border-radius: 25px 25px 0 0;
 	margin-top: 12px;
 	margin-bottom: 12px;
+	color: white;
 }
 
 div.card {
 	font-size: 36px;
 	animation-name: show-card;
 	animation-duration: 7s;
-	background-color: #E2A388;
+	background-color: black;
+	color: white;
 	margin-top: 0;
 	margin-bottom: 12px;
 	display: flow-root list-item;
+	border-bottom: 1px solid white;
+	padding-left: 12px;
 }
 
 div.about {
 	font-size: 36px;
-	background-color: #268DA6;
+	background-color: black;
+	color: white;
 	margin-top: 0;
 	margin-bottom: 12px;
 	display: flow-root list-item;
+	padding-left: 12px;
 }
 
 img {
@@ -69,7 +107,7 @@ h2 {
 
 div.bottom {
 	font-size: 24px;
-	background-color: #03899c;
+	background-color: black;
 	border-radius: 0 0 25px 25px;
 	margin-top: 12px;
 	padding-left: 12px;
