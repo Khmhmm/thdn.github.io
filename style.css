@@ -1,130 +1,55 @@
 body {
-	background-color: black;
+	background-color: #0E0E0E;
 	color: white;
 	font-family: 'Rubik', sans-serif;
 }
 
-/* The animation code */
-@keyframes show-header {
-  0% {
-	  color: black;
-	  border-radius: 0;
-	  opacity: 0.0;
-	  margin-top: 2px;
-	  margin-bottom: 1px;
-  }
-  10%{
-	  margin-top: 0;
-	  margin-bottom: 0;
-	  border: 1px solid white;
-  }
-  25% {
-	  color: white;
-	  opacity: 0.45;
-  }
-  50% {
-	  color: #D9376D;
-	  border-radius: 25px;
-	  border: 1px solid #10ABFF;
-	  margin-top: 0;
-	  margin-left: 1.5em;
-	  margin-right: 1.5em;
-	  opacity: 0.95;
-  }
-  75% {
-	  color: white;
-	  opacity: 0.45;
-  }
-  90% {
-	  margin-top: 0;
-	  margin-bottom: 0;
-	  border: 1px solid white;
-  }
-  100% {
-	  color: black;
-	  border-radius: 0;
-	  opacity: 0.0;
-	  margin-top: 2px;
-	  margin-bottom: 1px;
-  }
+div {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
-@keyframes show-card {
-	0% {
-		background-color: black;
-		opacity: 0.2;
-	}
-	100% {
-		background-color: black;
-		opacity: 1.0;
-	}
-}
-
-h1.header {
-	z-index: 1;
-	font-size: 100px;
+div.header {
+	font-size: 64px;
 	text-align: center;
-	opacity: 1.0;
 	background-color: black;
-	animation-name: show-header;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-direction: forward;
-	border-radius: 25px 25px 0 0;
-	margin-top: 12px;
-	margin-bottom: 12px;
 	color: white;
+}
+
+div.header:hover {
+    color: #D9376D;
 }
 
 
 div.card {
 	font-size: 24px;
-	animation-name: show-card;
-	animation-duration: 3s;
 	background-color: black;
 	color: white;
-	margin-top: 0;
-	margin-bottom: -10px;
-	display: contents;
-	border-bottom: 1px solid white;
+	margin-top: 40px;
 	padding-left: 12px;
 	padding-top: 2px;
 	padding-bottom: 2px;
+    display: flex;
 }
 
 div.card:hover {
-		font-size: 24px;
-		margin-top: -5px;
-		margin-left: 0;
-		margin-right: 12px;
-		color: #D9376D;
-		border-color: #00376D;
-		display: flow;
+    color: #D9376D;
 }
 
-div.about {
-	font-size: 28px;
-	background-color: black;
-	color: white;
-	margin-top: 0;
-	margin-bottom: 0;
-	display: flow-root list-item;
-	padding-left: 12px;
+div.description {
+    margin-left: 25px;
 }
 
 img {
-	margin: 15px;
-}
-
-h2 {
-	padding: 0 0 0 18px;
+	width: 270px;
+    height: 270px;
+    margin-left: 5px;
+    border-radius: 50%;
 }
 
 div.bottom {
 	font-size: 22px;
 	background-color: black;
-	border-radius: 0 0 25px 25px;
-	margin-top: 12px;
 	padding-left: 12px;
 	padding-bottom: 6px;
 }
