@@ -53,3 +53,42 @@ div.bottom {
 	padding-left: 12px;
 	padding-bottom: 6px;
 }
+
+div.modal {
+	font-size: 36px;
+	position: fixed;
+	background-color: black;
+	margin: 7%;
+	padding: 5%;
+	border: 1px solid #888;
+	width: 76%;
+	text-align: -webkit-center;
+	box-shadow: 0px 0px 350px green;
+	z-index: 1;
+	border-radius: 15px;
+	border: solid green;
+}
+
+div.modal:hover {
+	border: solid #D9376D;
+	box-shadow: 0px 0px 350px #D9376D;
+}
+
+div.modal-button {
+	font-size: 32px;
+	background-color: green;
+	width: 20%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 15px;
+	margin-top: 75px;
+	margin-bottom: -50px;
+}
+
+div.modal-button:hover {
+	background-color: #D9376D;
+}
+
+.blur {
+	filter: blur(15px);
+}
