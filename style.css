@@ -61,7 +61,7 @@ div.description {
 }
 
 .center {
-	width: 99.1%;
+	width: 98.95%;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
@@ -94,9 +94,8 @@ img.rounded {
 
 div.bottom {
 	font-size: 22px;
-	background-color: black;
+/* 	background-color: #00000011; */
 	padding-left: 12px;
-	padding-bottom: 6px;
 }
 
 div.modal {

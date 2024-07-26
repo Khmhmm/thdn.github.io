@@ -1,3 +1,6 @@
+// disable video pop ability
+document.querySelectorAll('video').forEach(v => { v.setAttribute('pip', 'false'); })
+
 let baseTitle = 'IVESTIGATE THE CURSED CYBERPUNK WORLD';
 let baseContent = 'There is a strange disease in the world where people can add memories of another persons.';
 
